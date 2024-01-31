@@ -1,6 +1,6 @@
 import React from "react";
 
-const MyComponent = () => {
+const HomePage = () => {
   return (
     <div className="flex flex-col items-stretch bg-white">
       <div className="flex flex-col items-stretch w-full bg-slate-50 max-md:max-w-full">
@@ -1246,4 +1246,4 @@ const MyComponent = () => {
   );
 }
 
-export default MyComponent;
+export default HomePage;

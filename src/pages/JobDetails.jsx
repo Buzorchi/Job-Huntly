@@ -1,14 +1,13 @@
 import React from "react";
-import logo from "./assets/2659b20b00bfeeb5e7c1ab922273a0b3.jpg";
-import icon from './assets/Icon.png';
-import perk from "./assets/perk.png";
-import imgone from "./assets/leon-6awfTPLGaCE-unsplash.png";
-import imgtwo from "./assets/leon-wVh5grSMYaY-unsplash 1.png";
-import imgthree from "./assets/imgthree.png";
-import terraform from "./assets/terraform.png";
-import dropbox from "./assets/dropbox.png";
-import nomad from "./assets/nomad.png";
-import "./App.css";
+import logo from "../assets/2659b20b00bfeeb5e7c1ab922273a0b3.jpg"
+import icon from '../assets/Icon.png';
+import perk from "../assets/perk.png";
+import imgone from "../assets/leon-6awfTPLGaCE-unsplash.png";
+import imgtwo from "../assets/leon-wVh5grSMYaY-unsplash 1.png";
+import imgthree from "../assets/imgthree.png";
+import terraform from "../assets/terraform.png";
+import dropbox from "../assets/dropbox.png";
+import nomad from "../assets/nomad.png";
 
 const JobDetails = () => {
   return (

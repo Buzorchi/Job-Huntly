@@ -8,7 +8,6 @@ import imgthree from "../assets/imgthree.png";
 import terraform from "../assets/terraform.png";
 import dropbox from "../assets/dropbox.png";
 import nomad from "../assets/nomad.png";
-
 const JobDetails = () => {
   return (
     <div className="ml-24">

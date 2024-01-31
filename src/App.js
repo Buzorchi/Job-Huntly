@@ -20,9 +20,6 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    <div className="">
-      <MyComponent />
-    </div>
   );
 }
 

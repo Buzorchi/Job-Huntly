@@ -1,5 +1,5 @@
-import ReactDOM from "react-dom";
-import React, { useState, useEffect } from "react";
+
+import React, { useEffect } from "react";
 import icon from "../assets/Icon.png";
 import perk from "../assets/perk.png";
 import listicon from "../assets/listicon.png";
@@ -44,7 +44,7 @@ const JobDetails = () => {
   }
 
   useEffect(() => {
-    document.body.style.overflow = modalIsOpen == true ? "hidden" : "unset";
+    document.body.style.overflow = modalIsOpen === true ? "hidden" : "unset";
   }, [modalIsOpen]);
 
   // const contentStyle = { marginLeft: 'auto', marginRight: 'auto'};
@@ -86,7 +86,7 @@ const JobDetails = () => {
                 Find Jobs
               </a>
               <a
-                href=""
+                href="/job-details"
                 className="text-indigo-600 text-lg font-normal font-['Epilogue'] leading-relaxed"
               >
                 Browse Companies
@@ -637,6 +637,9 @@ const JobDetails = () => {
               </p>
             </div>
           </div>
+          <p className="w-[577.45px] text-slate-600 text-xl font-normal font-['Epilogue'] leading-relaxed">
+            {filteredItem.description}
+          </p>
         </div>
       </div>
       <div className="lg:pl-28 pl-10">

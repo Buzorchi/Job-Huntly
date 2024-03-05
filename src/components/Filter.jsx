@@ -4,12 +4,10 @@ import data from "../data/Jobs.json";
 const Filter = ({ onFilterChange }) => {
   const [categories, setCategories] = useState("");
   const [salary, setSalary] = useState("");
-  console.log('Selected Categories:', categories);
-  console.log('Selected Salary:', salary);
+  console.log("Selected Categories:", categories);
+  console.log("Selected Salary:", salary);
 
   onFilterChange(categories);
-  
-  
 
   //This block of code gets all categories item for each object in the array then filters all unique values
   const getAllUniqueCategories = (data) => {
@@ -41,11 +39,28 @@ const Filter = ({ onFilterChange }) => {
 
   return (
     <div>
-      <div className="w-[375px] h-[50px] px-4 py-3 bg-white shadow-inner justify-center items-center gap-2 inline-flex sm:hidden">
-        <div className="w-6 h-6 relative"></div>
-        <p className="text-slate-800 text-base font-medium font-['Inter'] leading-relaxed ">
-          More Filters
-        </p>
+      <div className="w-[375px] h-[50px] px-4 py-3 bg-white shadow-inner justify-center items-center gap-2 inline-flex sm:hidden onClick={() => setShowFilters(!showFilters)}">
+        {/* <div className="w-6 h-6 relative"></div> */}
+        {/* <select className="text-slate-800 text-base font-medium font-['Inter'] leading-relaxed "> */}
+        <select
+          name=""
+          id=""
+          value={categories}
+          onChange={(e) => {
+            const selectedCategory = e.target.value;
+            setCategories(selectedCategory);
+            onFilterChange({ categories: selectedCategory, salary });
+          }}
+          className="text-slate-800 text-base font-bold leading-normal mb-56 p-5"
+        >
+          <option value="">More Filters</option>
+          {newCategories.map((item, index) => (
+            <option key={index} value={item}>
+              {item}
+            </option>
+          ))}
+        </select>
+        {/* </select> */}
       </div>
 
       <div className=" mt-12 hidden sm:flex flex-col ">
